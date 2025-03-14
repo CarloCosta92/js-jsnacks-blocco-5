@@ -5,3 +5,11 @@ const numbers = [2, 8, 4, 7, 2, 87];
 
 const newNumbers = numbers.map((element) => element + 1);
 console.log(newNumbers);
+
+let result= [];
+for(let i=0;i<numbers.length;i++) {
+    const currentNumber=numbers[i] + 1;
+    result.push(currentNumber);
+}
+
+console.log(result)

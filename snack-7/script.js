@@ -24,3 +24,13 @@ const students = [
 
 const id2 = students.find((element) => element.id === 2 );
 console.log(id2);
+
+let result = null;
+for (let i=0; i<students.length;i++){
+  const student=students[i];
+  if (student.id === 2){
+    result = student;
+    break
+  }
+}
+console.log(result)

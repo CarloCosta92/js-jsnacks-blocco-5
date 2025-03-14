@@ -10,3 +10,11 @@ const posts = [
 
 const scrittori = posts.map((element) => element.author);
 console.log(scrittori);
+
+
+let newArray =[];
+for (let i=0; i<posts.length;i++){
+  newArray.push(posts[i].author)
+}
+
+console.log(newArray)

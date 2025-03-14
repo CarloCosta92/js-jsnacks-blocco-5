@@ -24,3 +24,13 @@ const students = [
 
 const classe = students.find((element) => element.name === 'Marco Lanci' );
 console.log(classe.class);
+
+let result = null;
+for (let i=0; i<students.length;i++){
+  const student=students[i];
+  if (student.name === "Marco Lanci"){
+    result = student.class;
+    break
+  }
+}
+console.log(result)

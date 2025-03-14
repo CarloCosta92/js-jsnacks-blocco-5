@@ -19,3 +19,20 @@ console.log(zucchineMax);
 const zucchineMin = zucchine.filter((lunghezza) => lunghezza.length < 15);
 console.log(zucchineMin);
 
+// col for
+
+const zucchineGrandi = [];
+const zucchinePiccole = [];
+
+for (let i=0;i<zucchine.length;i++){
+  if (zucchine[i].length >= 15){
+    zucchineGrandi.push(zucchine[i])
+  } else {
+
+    zucchinePiccole.push(zucchine[i])
+
+  }
+}
+
+console.log(zucchineGrandi)
+console.log(zucchinePiccole)
